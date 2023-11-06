@@ -5,7 +5,7 @@ def f_populacao(a, b):
     total = (a * 0.94) + (a * 0.01)
 
     while True:
-        #Imprime o anos, nascimento, mortes e populaçao final
+        #Imprime os anos, nascimento, mortes e populaçao final
         print(f'{b},{nasc:.0f},{mortes:.0f},{total:.0f}')
         b += 1
         nasc = total * 0.01
@@ -17,9 +17,11 @@ def f_populacao(a, b):
 
         
 def main():
+    #Entrada de Dados
     pop_dodo = int(input())
     ano = 1600
-    
+
+    #Saída de Dados
     f_populacao(pop_dodo, ano)
     
 
